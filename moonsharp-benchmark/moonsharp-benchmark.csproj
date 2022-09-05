@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>moonsharp_benchmark</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RestoreSources>../nuget-pkgs/src;https://api.nuget.org/v3/index.json</RestoreSources>
+    <RootNamespace>MoonSharpBenchmark</RootNamespace>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MoonSharpA" Version="*" Aliases="MoonSharpA" />
+    <PackageReference Include="MoonSharpB" Version="*" Aliases="MoonSharpB" />
+    <PackageReference Include="BenchmarkDotNet" Version="0.13.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="MoonSharpBenchmark" />
+  </ItemGroup>
+
+</Project>

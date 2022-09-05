@@ -1,0 +1,6 @@
+.vs/
+bin/
+obj/
+/nuget-pkgs/
+/moonsharp-a
+/moonsharp-b
